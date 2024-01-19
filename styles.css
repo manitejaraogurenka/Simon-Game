@@ -5,16 +5,32 @@ body {
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
+  font-size: 2.5rem;
+  margin:  3% 1% 4% 1%;
   color: #FEF2BF;
+}
+
+.start{
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: green solid 2px;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.start:hover{
+  transform: scale(1.1);
+}
+
+.none{
+  display: none;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -24,6 +40,7 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+  cursor: pointer;
 }
 
 .game-over {
@@ -50,4 +67,16 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    height: 40vh; /* Adjust the percentage as needed */
+    width: 40vh; /* Adjust the percentage as needed */
+  }
+
+  .row {
+    flex-direction: column;
+    /* align-items: center; */
+  }
 }
